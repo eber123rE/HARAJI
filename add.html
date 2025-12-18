@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>حراجي - أضف منتج</title>
+  <meta name="description" content="أضف منتجك للبيع في حراجي: ارفع 3 إلى 20 صورة، ضع وصفاً، رقم البائع والعنوان. واجهة سهلة وسريعة." />
+  <link rel="canonical" href="/add.html" />
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <header class="site-header card">
+      <div class="brand">
+        <svg class="door" viewBox="0 0 120 90" xmlns="http://www.w3.org/2000/svg" aria-hidden>
+          <rect x="4" y="10" width="112" height="76" rx="8" fill="#4a2516" />
+          <rect x="12" y="18" width="40" height="56" rx="6" fill="#7b3b22" />
+          <rect x="64" y="18" width="40" height="56" rx="6" fill="#7b3b22" />
+          <circle cx="92" cy="45" r="3" fill="#ffd36b" />
+        </svg>
+        <div>
+          <div class="title">حراجي</div>
+          <div class="subtitle">أضف منتجك للبيع</div>
+        </div>
+      </div>
+      <nav class="topnav">
+        <a href="index.html">الرئيسية</a>
+        <a href="add.html">أضف منتج</a>
+        <a href="browse.html">عرض المنتجات</a>
+      </nav>
+    </header>
+
+    <main style="margin-top:16px">
+      <section class="card">
+        <h2>نموذج عرض منتج</h2>
+        <form id="productForm">
+          <div class="form-row column">
+            <label>صور المنتج (3 إلى 20 صورة)</label>
+            <input id="imagesInput" type="file" accept="image/*" multiple />
+            <div class="note">ملاحظة: يجب رفع 3 صور على الأقل ولا يزيد عن 20 صورة.</div>
+            <div id="preview" class="image-preview"></div>
+          </div>
+
+          <div class="form-row column">
+            <label>وصف المنتج</label>
+            <textarea id="description" placeholder="اكتب وصفاً مفصلاً للمنتج"></textarea>
+          </div>
+
+          <div class="form-row">
+            <div style="flex:1">
+              <label>رقم البائع</label>
+              <input id="phone" type="tel" placeholder="مثال: 00967xxxxxxxx" required />
+            </div>
+            <div style="flex:2">
+              <label>عنوان البائع</label>
+              <input id="address" type="text" placeholder="المدينة، الحي أو عنوان قابل للوصف" required />
+            </div>
+          </div>
+
+          <div style="margin-top:10px;display:flex;gap:8px;align-items:center">
+            <button class="btn" type="submit">حفظ المنتج</button>
+            <a class="btn secondary" href="browse.html">عرض المنتجات</a>
+            <div id="error" style="color:#a00;font-weight:700;margin-right:12px"></div>
+          </div>
+        </form>
+      </section>
+    </main>
+
+    <footer>
+      © حراجي
+    </footer>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

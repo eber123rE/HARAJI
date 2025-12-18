@@ -1,0 +1,17 @@
+{
+  "name": "haraji",
+  "version": "1.0.0",
+  "description": "واجهة موقع حراجي - تجربة محلية مع API لرفع الصور والمنتجات",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.18.2",
+    "multer": "^1.4.5-lts.1",
+    "uuid": "^9.0.0"
+  }
+}
