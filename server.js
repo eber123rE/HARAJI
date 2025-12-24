@@ -57,7 +57,7 @@ app.post('/api/products', upload.array('images', 20), async (req, res) => {
     if(files.length < 3) return res.status(400).json({ error: 'min 3 images required' });
     if(files.length > 20) return res.status(400).json({ error: 'max 20 images allowed' });
 
-    const { description, phone, address } = req.body;
+    const { description, phone, address, price, governorate, currency } = req.body;
     if(!description || !phone || !address) return res.status(400).json({ error: 'missing fields' });
 
     const images = files.map(f => '/uploads/' + path.basename(f.path));
@@ -66,6 +66,9 @@ app.post('/api/products', upload.array('images', 20), async (req, res) => {
       description: description.trim(),
       phone: phone.trim(),
       address: address.trim(),
+      governorate: governorate ? governorate.trim() : '',
+      price: price ? Number(price) : 0,
+      currency: currency || 'YER',
       images,
       created: new Date().toISOString()
     };

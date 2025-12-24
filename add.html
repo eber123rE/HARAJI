@@ -27,6 +27,7 @@
         <a href="index.html">الرئيسية</a>
         <a href="add.html">أضف منتج</a>
         <a href="browse.html">عرض المنتجات</a>
+        <a href="seller.html">معلومات البائع</a>
       </nav>
     </header>
 
@@ -40,6 +41,16 @@
             <div class="note">ملاحظة: يجب رفع 3 صور على الأقل ولا يزيد عن 20 صورة.</div>
             <div id="preview" class="image-preview"></div>
           </div>
+          <div class="form-row column">
+            <label>سعر المنتج </label>
+            <div style="display:flex;gap:8px;align-items:center">
+              <input id="price" type="number" placeholder="مثال: 15000" required style="flex:1" />
+              <select id="priceCurrency" style="width:160px">
+                <option value="YER">YER (ريال يمني)</option>
+                <option value="SAR">SAR (ريال سعودي)</option>
+              </select>
+            </div>
+          </div>
 
           <div class="form-row column">
             <label>وصف المنتج</label>
@@ -52,8 +63,33 @@
               <input id="phone" type="tel" placeholder="مثال: 00967xxxxxxxx" required />
             </div>
             <div style="flex:2">
-              <label>عنوان البائع</label>
-              <input id="address" type="text" placeholder="المدينة، الحي أو عنوان قابل للوصف" required />
+              <label>المحافظة</label>
+              <select id="governorate" required>
+                <option value="">اختر المحافظة</option>
+                <option>أبين</option>
+                <option>أمانة العاصمة</option>
+                <option>أرحب</option>
+                <option>المهرة</option>
+                <option>حضرموت</option>
+                <option>حجّة</option>
+                <option>ذمار</option>
+                <option>عدن</option>
+                <option>الحديدة</option>
+                <option>تعز</option>
+                <option>صعدة</option>
+                <option>صنعاء</option>
+                <option>شبوة</option>
+                <option>الضالع</option>
+                <option>مارب</option>
+                <option>المحويت</option>
+                <option>لحج</option>
+                <option>ريمة</option>
+                <option>ذمار</option>
+                <option>تعز</option>
+              </select>
+              <div style="height:8px"></div>
+              <label>تفصيل العنوان (مدينة/حي/موقع)</label>
+              <input id="address" type="text" placeholder="مثال: مديرية المكلا، شارع كذا" required />
             </div>
           </div>
 
@@ -68,6 +104,7 @@
 
     <footer>
       © حراجي
+      <div style="margin-top:6px;font-size:12px;color:#6b6b6b">OMAIRAN</div>
     </footer>
   </div>
 

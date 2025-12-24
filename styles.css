@@ -1,6 +1,6 @@
 :root{
-  --accent:#b52a19; /* warm Yemeni red */
-  --muted:#f5f0ea;
+  --accent:#d32714; /* warm Yemeni red */
+  --muted:#e48005ca;
   --dark:#2b2b2b;
 }
 *{box-sizing:border-box}

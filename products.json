@@ -1,0 +1,57 @@
+[
+	{
+		"id": "p_sofa_1",
+		"created": "2025-12-20T00:00:00.000Z",
+		"description": "طقم أركان (كنب) 3+2 مودرن بحالة جيدة — لون رمادي",
+		"phone": "00967123456789",
+		"address": "عدن — الحي التجاري",
+		"governorate": "عدن",
+		"price": 45000,
+		"currency": "YER",
+		"images": ["data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='800' height='600'><rect width='100%' height='100%' fill='%23f3c6b8'/><text x='50%' y='50%' dominant-baseline='middle' text-anchor='middle' font-size='36' fill='%237b3b22'>أريكة - صورة تجريبية</text></svg>"]
+	},
+	{
+		"id": "p_table_1",
+		"created": "2025-12-19T00:00:00.000Z",
+		"description": "طاولة طعام خشبية لـ6 أفراد — طول 180 سم",
+		"phone": "00967111222333",
+		"address": "تعز — حي السلام",
+		"governorate": "تعز",
+		"price": 30000,
+		"currency": "YER",
+		"images": ["data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='800' height='600'><rect width='100%' height='100%' fill='%23e8f0f3'/><text x='50%' y='50%' dominant-baseline='middle' text-anchor='middle' font-size='36' fill='%234a6b7b'>طاولة طعام - صورة تجريبية</text></svg>"]
+	},
+	{
+		"id": "p_fridge_1",
+		"created": "2025-12-18T00:00:00.000Z",
+		"description": "ثلاجة فريش 14 قدم — كفالة سنة، شبه جديدة",
+		"phone": "00967999888777",
+		"address": "المكلا — شارع الوحدة",
+		"governorate": "حضرموت",
+		"price": 420,
+		"currency": "SAR",
+		"images": ["data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='800' height='600'><rect width='100%' height='100%' fill='%23dff0e1'/><text x='50%' y='50%' dominant-baseline='middle' text-anchor='middle' font-size='36' fill='%23507b37'>ثلاجة - صورة تجريبية</text></svg>"]
+	},
+	{
+		"id": "p_wash_1",
+		"created": "2025-12-17T00:00:00.000Z",
+		"description": "غسالة أوتوماتيك 7 كغ — حالة ممتازة",
+		"phone": "009676543210",
+		"address": "صنعاء — شارع الزبيري",
+		"governorate": "صنعاء",
+		"price": 350,
+		"currency": "SAR",
+		"images": ["data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='800' height='600'><rect width='100%' height='100%' fill='%23f7f3d9'/><text x='50%' y='50%' dominant-baseline='middle' text-anchor='middle' font-size='36' fill='%238b6b1f'>غسالة - صورة تجريبية</text></svg>"]
+	},
+	{
+		"id": "p_bed_1",
+		"created": "2025-12-16T00:00:00.000Z",
+		"description": "سرير زوجي مع مرتبة مريحة — سعر مناسب",
+		"phone": "00967123455678",
+		"address": "الحديدة — شارع السوق",
+		"governorate": "الحديدة",
+		"price": 22000,
+		"currency": "YER",
+		"images": ["data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='800' height='600'><rect width='100%' height='100%' fill='%23ffe8e8'/><text x='50%' y='50%' dominant-baseline='middle' text-anchor='middle' font-size='36' fill='%237b223b'>سرير - صورة تجريبية</text></svg>"]
+	}
+]

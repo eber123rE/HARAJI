@@ -1,0 +1,97 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>حراجي - صفحة البائع</title>
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    .seller-form{max-width:700px;margin:12px auto}
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header class="site-header card">
+      <div class="brand">
+        <svg class="door" viewBox="0 0 120 90" xmlns="http://www.w3.org/2000/svg" aria-hidden>
+          <rect x="4" y="10" width="112" height="76" rx="8" fill="#4a2516" />
+          <rect x="12" y="18" width="40" height="56" rx="6" fill="#7b3b22" />
+          <rect x="64" y="18" width="40" height="56" rx="6" fill="#7b3b22" />
+          <circle cx="92" cy="45" r="3" fill="#ffd36b" />
+        </svg>
+        <div>
+          <div class="title">حراجي</div>
+          <div class="subtitle">معلومات البائع</div>
+        </div>
+      </div>
+      <nav class="topnav">
+        <a href="index.html">الرئيسية</a>
+        <a href="add.html">أضف منتج</a>
+        <a href="browse.html">عرض المنتجات</a>
+        <a href="seller.html">معلومات البائع</a>
+      </nav>
+    </header>
+
+    <main style="margin-top:16px">
+      <section class="card seller-form">
+        <h2>معلومات البائع</h2>
+        <p class="note">املأ بياناتك لتظهر للمشترين بشكل أفضل.</p>
+        <div class="form-row column">
+          <label>اسم البائع</label>
+          <input id="sellerName" type="text" placeholder="اسمك أو اسم المتجر" />
+        </div>
+        <div class="form-row">
+          <div style="flex:1">
+            <label>رقم الهاتف</label>
+            <input id="sellerPhone" type="tel" placeholder="00967xxxxxxxx" />
+          </div>
+          <div style="flex:2">
+            <label>المحافظة</label>
+            <select id="sellerGovernorate">
+              <option value="">اختر المحافظة</option>
+              <option>أبين</option>
+              <option>أمانة العاصمة</option>
+              <option>حضرموت</option>
+              <option>تعز</option>
+              <option>عدن</option>
+              <option>الحديدة</option>
+              <option>صنعاء</option>
+              <option>صعدة</option>
+              <option>شبوة</option>
+              <option>الضالع</option>
+              <option>مارب</option>
+              <option>المحفّظة</option>
+            </select>
+          </div>
+        </div>
+        <div style="margin-top:12px">
+          <button class="btn" id="saveSeller">حفظ</button>
+          <a class="btn secondary" href="browse.html">عرض المنتجات</a>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      © حراجي
+      <div style="margin-top:6px;font-size:12px;color:#6b6b6b">OMAIRAN</div>
+    </footer>
+  </div>
+
+  <script>
+    // small helper to persist seller info locally
+    (function(){
+      const btn = document.getElementById('saveSeller');
+      btn && btn.addEventListener('click', ()=>{
+        const name = document.getElementById('sellerName').value.trim();
+        const phone = document.getElementById('sellerPhone').value.trim();
+        const gov = document.getElementById('sellerGovernorate').value;
+        const obj = {name, phone, governorate: gov};
+        localStorage.setItem('haraji_seller', JSON.stringify(obj));
+        alert('تم حفظ معلومات البائع محلياً');
+      });
+      // load
+      try{ const s = JSON.parse(localStorage.getItem('haraji_seller')||'null'); if(s){ document.getElementById('sellerName').value = s.name || ''; document.getElementById('sellerPhone').value = s.phone || ''; document.getElementById('sellerGovernorate').value = s.governorate || ''; } }catch(e){}
+    })();
+  </script>
+</body>
+</html>

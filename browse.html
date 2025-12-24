@@ -30,13 +30,27 @@
 
     <main style="margin-top:16px">
       <section class="card">
-        <h2>المنتجات المعروضة</h2>
+        <div style="display:flex;align-items:center;gap:12px;justify-content:space-between">
+          <h2 style="margin:0">المنتجات المعروضة</h2>
+          <div style="display:flex;gap:8px;align-items:center">
+            <div style="display:flex;gap:6px;align-items:center">
+              <button id="prevProductBtn" class="btn secondary" type="button">◀ السابق</button>
+              <button id="nextProductBtn" class="btn secondary" type="button">التالي ▶</button>
+            </div>
+            <label style="font-weight:600">عرض بالعملة:</label>
+            <select id="currencySelect">
+              <option value="YER">الريال اليمني (YER)</option>
+              <option value="SAR">الريال السعودي (SAR)</option>
+            </select>
+          </div>
+        </div>
         <div id="products" class="products-grid"></div>
       </section>
     </main>
 
     <footer>
       © حراجي
+      <div style="margin-top:6px;font-size:12px;color:#6b6b6b">OMAIRAN</div>
     </footer>
   </div>
 
